@@ -1,7 +1,7 @@
 # industrial-gis-career-pathway
 
 🌐 **Akses Website Live Demo:**  
-https://saskiahf7.github.io/industrial-gis-career-pathway/
+https://saskiahf7.github.io/Industrial-Gis-Career-Pathway/
 
 ---
 
