@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrial GIS Career Pathway</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&family=Inter:wght@400;500;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fdfbf7;
+      color: #111827;
+    }
+
+    .font-brut {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    /* Neo-Brutalist Hard Shadows */
+    .brut-card {
+      background: #ffffff;
+      border: 3px solid #111827;
+      box-shadow: 6px 6px 0px #111827;
+    }
+
+    .brut-card-accent {
+      background: #10b981;
+      border: 3px solid #111827;
+      box-shadow: 6px 6px 0px #111827;
+      color: #ffffff;
+    }
+
+    .brut-btn {
+      background: #4f46e5;
+      border: 3px solid #111827;
+      box-shadow: 4px 4px 0px #111827;
+      transition: all 0.1s ease;
+    }
+
+    .brut-btn:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px #111827;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-emerald-300 selection:text-black">
+
+  <!-- Brutalist Header -->
+  <header class="w-full bg-[#111827] text-white border-b-4 border-black sticky top-0 z-50 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-emerald-500 border-2 border-white flex items-center justify-center font-brut font-black text-xl text-black">
+          G
+        </div>
+        <div>
+          <h1 class="text-sm font-brut font-bold tracking-wider uppercase text-emerald-300">Industrial GIS Career Pathway</h1>
+          <p class="text-[11px] text-slate-300">Informatika Universitas Bengkulu</p>
+        </div>
+      </div>
+      <div class="px-4 py-1 rounded-none bg-emerald-400 text-black font-brut font-bold text-xs border-2 border-white">
+        Global Industry Series
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-12 flex-1 space-y-12 w-full">
+
+    <!-- Hero Section -->
+    <section class="brut-card p-8 md:p-12 relative overflow-hidden">
+      <div class="absolute top-0 right-0 bg-emerald-300 border-l-3 border-b-3 border-black px-6 py-2 font-brut font-black text-xs uppercase tracking-widest">
+        New Zealand Global Standard
+      </div>
+
+      <div class="space-y-6 max-w-4xl">
+        <span class="inline-block px-3 py-1 bg-emerald-100 border-2 border-black font-brut font-bold text-xs">
+          <i class="fa-solid fa-earth-americas mr-1 text-emerald-600"></i> Kuliah Praktisi Internasional
+        </span>
+
+        <h2 class="text-3xl md:text-5xl font-brut font-black tracking-tight leading-none text-black">
+          Career and Competition in Industrial Era with GIS
+        </h2>
+
+        <div class="p-4 bg-emerald-50 border-2 border-black font-medium text-sm">
+          <p><strong class="font-brut">Narasumber:</strong> Bapak Widi Primadepa, S.Kom. <span class="text-slate-600 block sm:inline">(Asset Management GIS Analyst di City Care Property, Selandia Baru | Alumni Informatika Unib 2008)</span></p>
+        </div>
+
+        <p class="text-slate-700 text-base leading-relaxed font-normal">
+          Membedah peluang karier global bagi sarjana Teknik Informatika. Lulusan IT memiliki keunggulan kompetitif (<em>one step ahead</em>) karena mampu membangun perangkat lunak spasial dan menguasai alur kerja sistem, bukan sekadar menggunakan aplikasi pemetaan konvensional.
+        </p>
+      </div>
+    </section>
+
+    <!-- Bento Grid Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      
+      <!-- IT vs GIS Competency Breakdown -->
+      <div class="lg:col-span-6 brut-card p-6 md:p-8 space-y-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between border-b-3 border-black pb-3 mb-4">
+            <h3 class="font-brut font-black text-lg uppercase flex items-center gap-2">
+              <i class="fa-solid fa-code-compare text-emerald-600"></i> Keunggulan IT dalam Ekosistem GIS
+            </h3>
+            <span class="text-xs font-mono font-bold bg-emerald-100 px-2 py-1 border border-black">One Step Ahead</span>
+          </div>
+          <p class="text-xs text-slate-600 mb-4">Perbandingan fokus kompetensi lulusan Teknik Informatika di industri spasial modern:</p>
+          
+          <div class="space-y-3 font-brut text-xs">
+            <div class="p-3 bg-emerald-50 border-2 border-black shadow-[2px_2px_0px_#000]">
+              <p class="font-bold text-black flex items-center justify-between">
+                <span>01 // Pemrograman & Otomatisasi (Python)</span>
+                <span class="text-emerald-700">Developer Level</span>
+              </p>
+            </div>
+            <div class="p-3 bg-white border-2 border-black shadow-[2px_2px_0px_#000]">
+              <p class="font-bold text-black flex items-center justify-between">
+                <span>02 // Integrasi Cloud & Spatial Database</span>
+                <span class="text-indigo-700">Enterprise Ready</span>
+              </p>
+            </div>
+            <div class="p-3 bg-white border-2 border-black shadow-[2px_2px_0px_#000]">
+              <p class="font-bold text-black flex items-center justify-between">
+                <span>03 // FME & Seamless Workflow Engineering</span>
+                <span class="text-amber-700">High Efficiency</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 bg-amber-100 border-2 border-black text-xs space-y-1">
+          <p class="font-brut font-bold text-sm text-black">Catatan Industri Global:</p>
+          <p class="text-slate-800">Perusahaan global seperti City Care Property sangat menghargai kemampuan pemecahan masalah dan fleksibilitas adaptasi teknologi di atas ijazah formal.</p>
+        </div>
+      </div>
+
+      <!-- Chart: Industry Sectors Distribution -->
+      <div class="lg:col-span-6 brut-card p-6 md:p-8 space-y-4 flex flex-col justify-between">
+        <div class="border-b-3 border-black pb-3">
+          <h3 class="font-brut font-black text-lg uppercase flex items-center gap-2">
+            <i class="fa-solid fa-chart-pie text-indigo-600"></i> Sektor Industri Utama Pengguna GIS
+          </h3>
+          <p class="text-xs text-slate-600">Proporsi pemanfaatan teknologi geospasial dalam operasional global</p>
+        </div>
+
+        <div class="h-64 flex justify-center items-center">
+          <canvas id="gisRadarChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive GIS Career & Salary Calculator -->
+    <section class="brut-card p-6 md:p-10 space-y-6">
+      <div class="border-b-3 border-black pb-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+          <h3 class="font-brut font-black text-xl uppercase flex items-center gap-2">
+            <i class="fa-solid fa-calculator text-emerald-600"></i> Simulator Proyeksi Karier & Standar Gaji GIS Global
+          </h3>
+          <p class="text-xs text-slate-600">Sesuaikan tingkat pengalaman dan kualifikasi teknis untuk melihat estimasi standar pasar internasional.</p>
+        </div>
+        <div class="px-3 py-1 bg-emerald-300 border-2 border-black font-brut font-bold text-xs">
+          New Zealand Benchmark
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Controls -->
+        <div class="space-y-4 md:col-span-1 p-4 bg-slate-50 border-2 border-black">
+          <div>
+            <label class="block font-brut font-bold text-xs uppercase mb-1">Pengalaman / Portofolio (Tahun):</label>
+            <input type="range" id="expRange" min="0" max="10" value="2" oninput="calculateSalary()" class="w-full accent-emerald-600">
+            <div class="flex justify-between text-xs font-mono font-bold mt-1">
+              <span>Fresh Grad</span>
+              <span id="expVal" class="text-emerald-700">2 Tahun</span>
+              <span>10+ Tahun</span>
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-brut font-bold text-xs uppercase mb-1">Penguasaan Python & Otomatisasi:</label>
+            <select id="pythonLevel" onchange="calculateSalary()" class="w-full bg-white border-2 border-black p-2.5 font-bold text-xs focus:outline-none">
+              <option value="1">Dasar (Scripting Sederhana)</option>
+              <option value="1.2" selected>Menengah (Automation & Script)</option>
+              <option value="1.5">Mahir (Enterprise Development)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Output Cards -->
+        <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+          <div class="p-5 bg-emerald-50 border-3 border-black shadow-[4px_4px_0px_#111] flex flex-col justify-between h-36">
+            <span class="font-brut font-bold text-xs uppercase text-emerald-900">Estimasi Jabatan Industri:</span>
+            <div>
+              <p id="jobTitleResult" class="font-brut font-black text-xl text-emerald-700 mt-1">GIS Analyst / Specialist</p>
+              <p class="text-[11px] font-semibold text-slate-600 mt-0.5">Berdasarkan kualifikasi teknis</p>
+            </div>
+          </div>
+
+          <div class="p-5 bg-amber-50 border-3 border-black shadow-[4px_4px_0px_#111] flex flex-col justify-between h-36">
+            <span class="font-brut font-bold text-xs uppercase text-amber-900">Proyeksi Gaji Tahunan:</span>
+            <div>
+              <p id="salaryNzdResult" class="font-brut font-black text-2xl text-slate-900 mt-0.5">$78,000 NZD</p>
+              <p id="salaryIdrResult" class="text-xs font-bold text-emerald-700 mt-0.5">± Rp 740 Juta / tahun</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Brutalist Footer -->
+  <footer class="border-t-4 border-black bg-white py-8 text-center text-xs space-y-1">
+    <p class="font-brut font-bold uppercase">© 2026 Industrial GIS Career Pathway Portfolio</p>
+    <p class="text-slate-600 font-medium">Program Studi Informatika, Fakultas Teknik, Universitas Bengkulu</p>
+  </footer>
+
+  <!-- Script Interactions -->
+  <script>
+    // 1. Radar Chart Configuration
+    const ctxRadar = document.getElementById('gisRadarChart').getContext('2d');
+    new Chart(ctxRadar, {
+      type: 'radar',
+      data: {
+        labels: ['Pemrograman (Python/JS)', 'Spatial DB (PostGIS)', 'Workflow Engineering', 'Cloud & Enterprise (FME)', 'AI & Automation'],
+        datasets: [{
+          label: 'Keunggulan Lulusan IT',
+          data: [90, 85, 95, 80, 90],
+          backgroundColor: 'rgba(16, 185, 129, 0.3)',
+          borderColor: '#10b981',
+          borderWidth: 3,
+          pointBackgroundColor: '#111827'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          r: {
+            grid: { color: '#e5e7eb' },
+            angleLines: { color: '#e5e7eb' },
+            pointLabels: { font: { family: 'Inter', size: 10, weight: 'bold' }, color: '#111827' },
+            ticks: { display: false, max: 100 }
+          }
+        },
+        plugins: {
+          legend: { display: false }
+        }
+      }
+    });
+
+    // 2. Calculator Logic
+    function calculateSalary() {
+      const exp = parseInt(document.getElementById('expRange').value);
+      const pyMultiplier = parseFloat(document.getElementById('pythonLevel').value);
+
+      document.getElementById('expVal').innerText = `${exp} Tahun`;
+
+      let baseNzd = 55000 + (exp * 6500);
+      let totalNzd = Math.round(baseNzd * pyMultiplier);
+
+      let title = "GIS Technician";
+      if (exp >= 2 && totalNzd >= 70000) title = "GIS Analyst / Specialist";
+      if (exp >= 5 && totalNzd >= 95000) title = "Senior GIS Analyst / Enterprise Engineer";
+
+      let idrJuta = Math.round((totalNzd * 9500) / 1000000);
+
+      document.getElementById('jobTitleResult').innerText = title;
+      document.getElementById('salaryNzdResult').innerText = `$${totalNzd.toLocaleString()} NZD`;
+      document.getElementById('salaryIdrResult').innerText = `± Rp ${idrJuta} Juta / tahun`;
+    }
+
+    calculateSalary();
+  </script>
+</body>
+</html>
